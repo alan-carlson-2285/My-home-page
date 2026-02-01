@@ -3,214 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Urban - Global Visionary & CEO of Life</title>
+    <title>Adam Urban | Visionary. Entrepreneur. Mentor.</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'rich-black': '#0a0a0a',
-                        'luxury-gold': '#d4af37',
-                        'luxury-gold-light': '#f3e5ab',
-                        'dark-charcoal': '#1a1a1a',
-                    },
-                    fontFamily: {
-                        'serif': ['"Playfair Display"', 'serif'],
-                        'sans': ['"Montserrat"', 'sans-serif'],
-                    },
-                    backgroundImage: {
-                        'gold-gradient': 'linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c)',
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        .text-gold-gradient {
-            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
         }
-        .bg-gold-shine {
-            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 50%, #aa771c 100%);
+        
+        .gold-bg {
+            background: linear-gradient(135deg, #bf953f, #aa771c);
         }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
-<body class="bg-rich-black text-white font-sans overflow-x-hidden">
+<body class="bg-slate-950 text-slate-200 antialiased overflow-x-hidden">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 bg-rich-black/90 border-b border-luxury-gold/30 backdrop-blur-md">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <span class="font-serif text-2xl font-bold text-gold-gradient tracking-widest">ADAM URBAN</span>
-                    <span class="block text-[0.6rem] text-luxury-gold tracking-[0.3em] uppercase">Private Office</span>
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold tracking-widest text-white">URBAN<span class="text-yellow-600">.</span></span>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#vision" class="hover:text-luxury-gold transition-colors duration-300 uppercase text-xs tracking-widest">Wizja</a>
-                        <a href="#legend" class="hover:text-luxury-gold transition-colors duration-300 uppercase text-xs tracking-widest">Moja Legenda</a>
-                        <a href="#success" class="hover:text-luxury-gold transition-colors duration-300 uppercase text-xs tracking-widest">Imperium</a>
-                        <a href="#contact" class="bg-gold-shine text-rich-black px-6 py-2 rounded-none font-bold uppercase text-xs tracking-widest hover:brightness-110 transition-all">Dostęp VIP</a>
-                    </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#filozofia" class="text-sm uppercase tracking-widest hover:text-yellow-500 transition">Filozofia</a>
+                    <a href="#historia" class="text-sm uppercase tracking-widest hover:text-yellow-500 transition">Geneza</a>
+                    <a href="#metoda" class="text-sm uppercase tracking-widest hover:text-yellow-500 transition">Metoda</a>
+                    <a href="#kontakt" class="px-6 py-2 border border-yellow-600 text-yellow-500 hover:bg-yellow-600 hover:text-white transition duration-300">Kontakt</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="vision" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image (Luxury Car/City placeholder) -->
-        <div class="absolute inset-0 z-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-rich-black via-rich-black/80 to-transparent z-10"></div>
-        
-        <div class="relative z-20 text-center max-w-4xl px-4">
-            <p class="text-luxury-gold text-sm md:text-base tracking-[0.5em] uppercase mb-4 animate-pulse">Niezależny Inwestor • Filantrop • Wizjoner</p>
-            <h1 class="font-serif text-5xl md:text-8xl font-bold mb-6 leading-tight">
-                Nie gonię pieniędzy.<br>
-                <span class="text-gold-gradient">Pieniądze gonią mnie.</span>
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/80 to-slate-950"></div>
+            <!-- Abstract background mostly dark -->
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="City Skyline" class="w-full h-full object-cover opacity-20 grayscale">
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in-up">
+            <p class="text-yellow-500 tracking-[0.3em] uppercase mb-4 text-sm font-semibold">Niezależny Biznesmen. Wizjoner.</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+                Sukces to nie cel.<br>
+                <span class="serif italic gold-gradient">To algorytm.</span>
             </h1>
-            <p class="text-gray-300 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto italic">
-                "Kiedy inni spali, ja budowałem systemy. Kiedy inni budowali systemy, ja kupowałem tych, którzy je budowali."
+            <p class="text-xl text-gray-400 mb-10 font-light max-w-2xl mx-auto">
+                Pomagam liderom transformować ich potencjał w skalowalną rzeczywistość. 
+                Nie sprzedaję marzeń. Sprzedaję architekturę zwycięstwa.
             </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#legend" class="px-8 py-4 border border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-rich-black transition-all duration-300 uppercase tracking-widest text-sm font-bold">
-                    Poznaj Prawdę
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#kontakt" class="px-8 py-4 bg-white text-slate-900 font-bold hover:bg-gray-200 transition duration-300">
+                    Rozpocznij Transformację
+                </a>
+                <a href="#historia" class="px-8 py-4 border border-white/20 hover:bg-white/5 transition duration-300 backdrop-blur-sm">
+                    Poznaj Moją Drogę
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- The "Legend" Section (Bajkopisarstwo Biznesowe) -->
-    <section id="legend" class="py-24 bg-dark-charcoal relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-serif text-4xl md:text-5xl text-white mb-4">Kroniki Sukcesu</h2>
-                <div class="w-24 h-1 bg-luxury-gold mx-auto mb-6"></div>
-                <p class="text-gray-400 max-w-2xl mx-auto">
-                    Historie, w które trudno uwierzyć zwykłym śmiertelnikom, a które dla mnie są po prostu kolejnym wtorkiem.
-                </p>
+    <!-- Stats Section (The "Numbers") -->
+    <section class="py-20 border-b border-white/5 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-6">
+                <h3 class="text-5xl font-bold text-white mb-2">142+</h3>
+                <p class="text-yellow-600 uppercase tracking-widest text-xs">Zoptymalizowanych Podmiotów</p>
             </div>
+            <div class="p-6 border-y md:border-y-0 md:border-x border-white/10">
+                <h3 class="text-5xl font-bold text-white mb-2">∞</h3>
+                <p class="text-yellow-600 uppercase tracking-widest text-xs">Horyzont Możliwości</p>
+            </div>
+            <div class="p-6">
+                <h3 class="text-5xl font-bold text-white mb-2">24/7</h3>
+                <p class="text-yellow-600 uppercase tracking-widest text-xs">Stan Flow</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Story 1 -->
-                <div class="glass-panel p-8 hover:transform hover:-translate-y-2 transition-transform duration-500">
-                    <div class="text-luxury-gold text-6xl mb-4 opacity-20 font-serif">"</div>
-                    <h3 class="text-xl font-bold text-luxury-gold-light mb-4 uppercase tracking-wider">Incydent w Dubaju</h3>
-                    <p class="text-gray-300 leading-relaxed">
-                        Pamiętam to jak dziś. Siedziałem w lobby Burdż Chalifa. Podszedł do mnie szejk – nie będę wymieniał nazwisk, RODO, rozumiesz. Zapytał o drogę do windy. Zamiast tego, w 3 minuty nakreśliłem mu na serwetce plan dywersyfikacji jego portfela naftowego w oparciu o kwantowe algorytmy, które wymyśliłem pod prysznicem. 
-                        <br><br>
-                        Efekt? Chciał mi oddać jedną ze swoich wysp. Odmówiłem. Powiedziałem: "Dla mnie liczy się wolność, przyjacielu". Do dziś wysyła mi kartki na święta.
-                    </p>
-                </div>
-
-                <!-- Story 2 -->
-                <div class="glass-panel p-8 hover:transform hover:-translate-y-2 transition-transform duration-500">
-                    <div class="text-luxury-gold text-6xl mb-4 opacity-20 font-serif">"</div>
-                    <h3 class="text-xl font-bold text-luxury-gold-light mb-4 uppercase tracking-wider">Prawdziwy twórca Crypto</h3>
-                    <p class="text-gray-300 leading-relaxed">
-                        Ludzie mówią: Satoshi Nakamoto. Ja się tylko uśmiecham pod nosem. W 2008 roku, podczas medytacji w Tybecie, wpadłem na pomysł zdecentralizowanej księgi. Napisałem kod na odwrocie biletu lotniczego, ale zgubiłem go na lotnisku w Tokio. 
-                        <br><br>
-                        Miesiąc później? Boom. Bitcoin. Przypadek? Nie sądzę. Ale nie walczę o prawa autorskie. Pieniądz to energia, a ja jestem generatorem.
-                    </p>
+    <!-- The "Story" Section (Wydumane historie) -->
+    <section id="historia" class="py-24 bg-slate-950 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-yellow-600"></div>
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" alt="Adam Urban w biurze" class="w-full grayscale shadow-2xl shadow-yellow-900/20">
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-yellow-600"></div>
                 </div>
                 
-                <!-- Story 3 -->
-                <div class="glass-panel p-8 hover:transform hover:-translate-y-2 transition-transform duration-500 md:col-span-2">
-                    <div class="text-luxury-gold text-6xl mb-4 opacity-20 font-serif">"</div>
-                    <h3 class="text-xl font-bold text-luxury-gold-light mb-4 uppercase tracking-wider">Telefon od Elona</h3>
-                    <p class="text-gray-300 leading-relaxed text-center italic">
-                        "Odbieram, a tam cisza. Mówię: 'Słucham?'. Głos po drugiej stronie: 'Adam, nie wiem jak to zrobić, rakieta nie chce wracać'. Powiedziałem mu tylko dwa słowa: 'Zmień perspektywę'. Rozłączyłem się. Reszta jest historią. Nie widnieję w dokumentach SpaceX, bo wolę działać z cienia."
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Od Mikroskali do Makroefektu</h2>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Mój pierwszy biznes? Miałem 9 lat. Podczas gdy rówieśnicy wymieniali się kartami, ja zauważyłem nieefektywność w lokalnym systemie dystrybucji runa leśnego. Stworzyłem sieć logistyczną opartą na rowerach górskich i krótkofalówkach, która w ciągu miesiąca zmonopolizowała rynek jagód w trzech powiatach. To była lekcja numer jeden: 
+                        <strong class="text-white">Popyt się nie pojawia. Popyt się kreuje.</strong>
+                    </p>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        W wieku 22 lat, po krótkim epizodzie na Wall Street (który uznałem za zbyt powolny), przeniosłem się do sektora, który nazywam "Niewidzialną Ekonomią". Doradzałem zarządom spółek, które jeszcze nie istniały, pomagając im osiągnąć rentowność zanim w ogóle zostały zarejestrowane.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed italic border-l-4 border-yellow-600 pl-4">
+                        "Adam Urban nie wchodzi do pokoju. On zmienia jego gęstość energetyczną." 
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">— Forbes (wydanie wyobrażone, 2028)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="metoda" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-yellow-500 uppercase tracking-widest text-sm">Metodologia Urban™</span>
+                <h2 class="text-4xl font-bold mt-2">Trzy Filary Dominacji</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group p-8 border border-white/5 bg-white/5 hover:bg-white/10 transition duration-500 cursor-pointer">
+                    <i data-lucide="brain-circuit" class="w-12 h-12 text-yellow-500 mb-6 group-hover:scale-110 transition duration-500"></i>
+                    <h3 class="text-xl font-bold mb-4">Kwantowa Wizualizacja</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Nie planujemy przyszłości w oparciu o przeszłość. Ekstrapolujemy sukces z równoległych rzeczywistości, w których Twoja firma już jest liderem, i ściągamy ten stan do teraźniejszości poprzez agresywne pozycjonowanie mentalne.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group p-8 border border-white/5 bg-white/5 hover:bg-white/10 transition duration-500 cursor-pointer">
+                    <i data-lucide="trending-up" class="w-12 h-12 text-yellow-500 mb-6 group-hover:scale-110 transition duration-500"></i>
+                    <h3 class="text-xl font-bold mb-4">Synergia Pasywna</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Pieniądze lubią ciszę, ale uwielbiają systemy. Buduję ekosystemy przychodowe, które są niezależne od czasu, przestrzeni i fluktuacji rynkowych. Twój kapitał powinien pracować nawet wtedy, gdy Ty medytujesz w Himalajach.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group p-8 border border-white/5 bg-white/5 hover:bg-white/10 transition duration-500 cursor-pointer">
+                    <i data-lucide="gem" class="w-12 h-12 text-yellow-500 mb-6 group-hover:scale-110 transition duration-500"></i>
+                    <h3 class="text-xl font-bold mb-4">Ego-Hacking</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Twoim największym wrogiem jest Twoje "ja", które mówi "to niemożliwe". Rozmontowujemy Twoje stare oprogramowanie i instalujemy mindset zdobywcy. To nie jest coaching. To operacja na otwartym umyśle.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section (Totally made up) -->
-    <section id="success" class="py-20 bg-black border-y border-luxury-gold/20">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div>
-                <div class="text-5xl font-serif text-gold-gradient font-bold mb-2">∞</div>
-                <div class="text-xs uppercase tracking-widest text-gray-400">Potencjał Wzrostu</div>
-            </div>
-            <div>
-                <div class="text-5xl font-serif text-gold-gradient font-bold mb-2">48h</div>
-                <div class="text-xs uppercase tracking-widest text-gray-400">Doba Adama Urbana</div>
-            </div>
-            <div>
-                <div class="text-5xl font-serif text-gold-gradient font-bold mb-2">0</div>
-                <div class="text-xs uppercase tracking-widest text-gray-400">Porażek (tylko lekcje)</div>
-            </div>
-            <div>
-                <div class="text-5xl font-serif text-gold-gradient font-bold mb-2">100%</div>
-                <div class="text-xs uppercase tracking-widest text-gray-400">Mindset</div>
+    <!-- Testimonials (Fake) -->
+    <section class="py-20 border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <i data-lucide="quote" class="w-10 h-10 text-yellow-600 mx-auto mb-6 opacity-50"></i>
+            <h3 class="text-2xl md:text-3xl font-light leading-relaxed mb-8">
+                "Zanim spotkałem Adama, byłem po prostu CEO dużej korporacji. Teraz jestem architektem rzeczywistości. Adam pokazał mi, że bilans zysków i strat to tylko iluzja, którą można naginać siłą woli."
+            </h3>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-12 h-12 bg-gray-700 rounded-full overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop" class="w-full h-full object-cover">
+                </div>
+                <div class="text-left">
+                    <p class="font-bold text-white">Krzysztof B.</p>
+                    <p class="text-xs text-yellow-500 uppercase">Inwestor Venture Capital</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 relative overflow-hidden">
-        <div class="absolute inset-0 bg-rich-black z-0"></div>
-        <!-- Decorative golden circle -->
-        <div class="absolute -right-20 top-20 w-96 h-96 border border-luxury-gold/10 rounded-full z-0"></div>
-        <div class="absolute -left-20 bottom-20 w-96 h-96 border border-luxury-gold/10 rounded-full z-0"></div>
+    <section id="kontakt" class="relative py-24 bg-slate-900 overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-yellow-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
 
-        <div class="max-w-3xl mx-auto px-4 relative z-10 text-center">
-            <h2 class="font-serif text-4xl text-white mb-8">Dołącz do Elity</h2>
-            <p class="text-gray-400 mb-12">
-                Mój czas jest wyceniany w uncjach złota na minutę. Ale czasem, gdy widzę potencjał, odbieram telefon. Nie dzwoń z błahostkami. Dzwoń z wizją.
-            </p>
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
+            <div class="bg-slate-950/80 backdrop-blur-xl border border-white/10 p-8 md:p-16 rounded-2xl shadow-2xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Czy jesteś gotów na <span class="text-yellow-500">Upgrade?</span></h2>
+                    <p class="text-gray-400">
+                        Nie pracuję z każdym. Pracuję z tymi, którzy są gotowi porzucić przeciętność.
+                        Jeśli czujesz, że rezonujesz z moją częstotliwością – odezwij się.
+                    </p>
+                </div>
 
-            <div class="bg-dark-charcoal p-10 border border-luxury-gold/30 shadow-[0_0_50px_rgba(212,175,55,0.1)]">
-                
-                <div class="space-y-8">
-                    <!-- Phone -->
-                    <div class="group">
-                        <p class="text-xs text-luxury-gold uppercase tracking-[0.2em] mb-2">Bezpośrednia Linia (VIP ONLY)</p>
-                        <a href="tel:+48724964759" class="font-serif text-3xl md:text-4xl text-white group-hover:text-luxury-gold transition-colors duration-300">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="flex flex-col items-center justify-center p-8 bg-slate-900 rounded-xl hover:bg-slate-800 transition border border-white/5">
+                        <i data-lucide="phone" class="w-8 h-8 text-yellow-500 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2">Linia Bezpośrednia</h3>
+                        <p class="text-gray-400 text-sm mb-4">Tylko dla zdecydowanych.</p>
+                        <a href="tel:+48724964759" class="text-2xl font-mono text-white hover:text-yellow-500 transition">
                             +48 724 964 759
                         </a>
-                        <p class="text-xs text-gray-600 mt-2 italic">*Jeśli nie odbieram, negocjuję przyszłość globalnej gospodarki.</p>
                     </div>
 
-                    <div class="w-full h-px bg-gradient-to-r from-transparent via-luxury-gold/50 to-transparent"></div>
-
-                    <!-- Email -->
-                    <div class="group">
-                        <p class="text-xs text-luxury-gold uppercase tracking-[0.2em] mb-2">Skrzynka Osobista</p>
-                        <a href="mailto:adam.urban.8512@gmail.com" class="font-sans text-xl md:text-2xl text-white group-hover:text-luxury-gold transition-colors duration-300 break-all">
+                    <div class="flex flex-col items-center justify-center p-8 bg-slate-900 rounded-xl hover:bg-slate-800 transition border border-white/5">
+                        <i data-lucide="mail" class="w-8 h-8 text-yellow-500 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2">Komunikacja Cyfrowa</h3>
+                        <p class="text-gray-400 text-sm mb-4">Średni czas reakcji: zależny od priorytetu.</p>
+                        <a href="mailto:adam.urban.8512@gmail.com" class="text-xl font-mono text-white hover:text-yellow-500 transition break-all">
                             adam.urban.8512@gmail.com
                         </a>
                     </div>
                 </div>
 
-                <div class="mt-12">
-                    <button class="w-full py-4 bg-transparent border border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-rich-black transition-all duration-300 font-bold uppercase tracking-widest text-sm relative overflow-hidden group">
-                        <span class="relative z-10">Złóż Aplikację o Rozmowę</span>
-                        <div class="absolute inset-0 h-full w-full bg-luxury-gold/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
-                    </button>
+                <div class="mt-12 text-center">
+                    <p class="text-xs text-gray-600">
+                        *Adam Urban International Holdings LTD nie ponosi odpowiedzialności za gwałtowny wzrost przychodów, zmiany osobowości czy nagłe poczucie wyższości nad otoczeniem, które mogą wystąpić po konsultacji.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-8 border-t border-gray-900 text-center">
-        <p class="text-luxury-gold font-serif text-lg tracking-widest mb-2">ADAM URBAN</p>
-        <p class="text-gray-600 text-xs uppercase tracking-wider">
-            CEO of Everything &copy; 2024. Wszelkie prawa do mojej intelektualnej własności zastrzeżone.
-        </p>
+    <footer class="bg-slate-950 py-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <p>&copy; 2024 Adam Urban. Wszelkie prawa zastrzeżone.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">Twitter (X)</a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+        
+        // Simple script to handle smooth scroll offset for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
